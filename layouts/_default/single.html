@@ -1,0 +1,26 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<article>
+  <header class="entry-header">
+    <span class="entry-date">{{ .Date.Format "2006-01-01" }}</span>
+    <h1 class="entry-title">{{ .Title }}</h1>
+    {{ with .Params.tags }}<div class="tags-list">{{ range . }} <div class="tags-item"><a
+          href="/tags/{{ lower . }}/">#{{ . }}</a></div>{{ end }}</div>{{ end }}
+  </header>
+
+  <div class="entry-content">
+    <p>{{ .Content }}</p>
+  </div>
+
+  {{ partial "share.html" . }}
+  {{ partial "pagenation.html" . }}
+</article>
+<p class="article-partition">***</p>
+{{ partial "author.html" . }}
+{{ partial "footer.html" . }}
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+    diameter: 56,
+    backgroundColor: '#424242',
+    textColor: '#fff'
+  })</script>

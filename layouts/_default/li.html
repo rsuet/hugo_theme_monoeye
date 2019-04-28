@@ -1,0 +1,12 @@
+<li class="blog-entry">
+    <a href="{{ .Permalink }}">
+        <!-- <span>{{ .Date.Format "Jan 02, 2006" }}</span>{{ .Title }} -->
+        <span class="entry-date">{{ .Date.Format "2006-01-01" }}</span>
+        <h1 class="entry-title">{{ .Title }}</h1>
+    </a>
+    {{ .Summary | plainify }}
+    {{ if .Truncated }}
+    <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+    <div class="readmore"><a href="{{ .RelPermalink }}">続きを読む</a></div>
+    {{ end }}
+</li>

@@ -1,0 +1,9 @@
+<header class="blog-header">
+    <a href="{{ "/" | relLangURL }}">
+        {{ if .Site.Params.logoTitle }}
+        {{ .Site.Params.logoTitle | safeHTML }}
+        {{ else }}
+        {{ .Site.Title }}
+        {{ end }}
+    </a>
+</header>
