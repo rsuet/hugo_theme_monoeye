@@ -1,5 +1,6 @@
 <div class="author">
-    <img class="author-avatar" src="{{ .Site.Author.image | urlize | relURL  }}" alt="{{ .Site.Params.authorName }}">
+    <img class="author-avatar" src="{{ .Site.Params.authorAvatar | urlize | relURL  }}"
+        alt="{{ .Site.Params.authorName }}">
     <div class="author-meta">
         <span class="author-name">{{ .Site.Params.authorName }}</span>
         <span class="author-profile">{{ .Site.Params.authorProfile }}</span>
