@@ -7,6 +7,6 @@
     {{ .Summary | plainify }}
     {{ if .Truncated }}
     <!-- This <div> includes a read more link, but only if the summary is truncated... -->
-    <div class="readmore"><a href="{{ .RelPermalink }}">続きを読む</a></div>
+    <div class="readmore"><a href="{{ .RelPermalink }}">read more</a></div>
     {{ end }}
 </li>
