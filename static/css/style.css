@@ -1,12 +1,15 @@
-@font-face {
+/* @font-face {
     font-family: "Noto Sans JP";
     src: url("/fonts/NotoSansJP-Regular.otf") format("otf"),
-}
+} */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto');
+
 
 * {
     /* margin: 0;*/
     padding: 0;
     font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
