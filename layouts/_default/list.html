@@ -8,7 +8,6 @@
             {{ end }}
         </ul>
     </article>
-    <p class="article-partition">***</p>
     {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
     <nav class="pagination">
         {{ if .Paginator.HasPrev }}
@@ -20,6 +19,7 @@
         {{ end }}
     </nav>
     {{ end }}
+    <p class="article-partition">***</p>
 </main>
 {{ partial "author.html" . }}
 {{ partial "footer.html" . }}
