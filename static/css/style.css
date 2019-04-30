@@ -227,3 +227,7 @@ blockquote {
 .xPrevNextLink_next::after {
     content: " ≫";
 }
+
+.pagination {
+    margin-bottom: 36px;
+}
