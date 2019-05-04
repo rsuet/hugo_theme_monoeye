@@ -2,7 +2,7 @@
 {{ partial "header.html" . }}
 <article>
   <header class="entry-header">
-    <span class="entry-date">{{ .Date.Format "2006-01-01" }}</span>
+    <span class="entry-date">{{ .Date.Format "2006/01/01" }}</span>
     <h1 class="entry-title">{{ .Title }}</h1>
     {{ with .Params.tags }}<div class="tags-list">{{ range . }} <div class="tags-item"><a
           href="/tags/{{ lower . }}/">#{{ . }}</a></div>{{ end }}</div>{{ end }}
