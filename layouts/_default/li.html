@@ -6,7 +6,7 @@
         {{ . | safeHTML }}
         {{ end }}
         {{ else }}
-        <img src="/images/600400.png">
+        <img src="{{ .Site.Params.defaultThumbnail }}">
         {{ end}}
     </div>
     <div class="blog-entry-content">
