@@ -178,6 +178,7 @@ blockquote {
     height: 64px;
     display: inline-block;
     vertical-align: middle;
+    object-fit: cover;
 }
 
 .author-meta {
