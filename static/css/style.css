@@ -236,6 +236,5 @@ blockquote {
     object-fit: cover;
     width: 300px;
     height: 200px;  
-    margin-right: 24px;
-    border: 1px solid #6a737d;
+    margin-right: 36px;
 }
