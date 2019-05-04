@@ -1,4 +1,12 @@
 <li class="blog-entry">
+    {{ $eyecatch_image := findRE "<img.*?src=([^>]*)?>" .Content 1 }}
+    {{ if ge (len $eyecatch_image ) 1 }}
+    {{ range $eyecatch_image }}
+    {{ . | safeHTML }}
+    {{ end }}
+    {{ else }}
+    <img src="/images/600400.png">
+    {{ end}}
     <a href="{{ .Permalink }}">
         <!-- <span>{{ .Date.Format "Jan 02, 2006" }}</span>{{ .Title }} -->
         <span class="entry-date">{{ .Date.Format "2006-01-01" }}</span>
